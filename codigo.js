@@ -1,27 +1,48 @@
-function sumar() {
-    var num1 = document.getElementById("num1").value;
-    var num2 = document.getElementById("num2").value;
-    var suma = Number(num1) + Number(num2);
-    document.getElementById("res").value = suma;
+var num1 = 'e';
+var num2 = 'y';
+var opera = 0;
+
+function borrar() {
+    document.getElementById("resultado").value = ' ';
+
 }
 
-function restar() {
-    var num1 = document.getElementById("num1").value;
-    var num2 = document.getElementById("num2").value;
-    var suma = Number(num1) - Number(num2);
-    document.getElementById("res").value = suma;
+function sumita() {
+    if (num1 = !'e') {
+        opera = 1
+    }
 }
 
-function Multiplicar() {
-    var num1 = document.getElementById("num1").value;
-    var num2 = document.getElementById("num2").value;
-    var suma = Number(num1) * Number(num2);
-    document.getElementById("res").value = suma;
+function restita() {
+    if (num1 = !'e') {
+        opera = 2
+    }
 }
 
-function Dividir() {
-    var num1 = document.getElementById("num1").value;
-    var num2 = document.getElementById("num2").value;
-    var suma = Number(num1) / Number(num2);
-    document.getElementById("res").value = suma;
+function mupli() {
+    if (num1 = !'e') {
+        opera = 3
+    }
+}
+
+function divi() {
+    if (num1 = !'e') {
+        opera = 4
+    }
+}
+
+function valor(numero) {
+    var states;
+    if (document.getElementById("resultado").value == ' ') {
+        document.getElementById("resultado").value = numero
+        num1 = document.getElementById("resultado").value
+    } else if (opera == 0) {
+        document.getElementById("resultado").value = document.getElementById("resultado").value + numero
+        num1 = document.getElementById("resultado").value
+    } else {
+        document.getElementById("resultado").value = document.getElementById("resultado").value + numero
+        num2 = document.getElementById("resultado").value
+    }
+
+
 }
